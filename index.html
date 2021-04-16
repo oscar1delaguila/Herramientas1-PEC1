@@ -1,0 +1,197 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+
+
+
+	<meta charset="utf-8">
+
+
+	<!--
+		Esta metaetiqueta informa a los navegadores de los dispositivos móviles que deben establecer el ancho de la ventana gráfica 
+		al ancho del dispositivo y escalar el documento al 100% de ese tamaño, de modo que el documento se mostrará al tamaño optimizado para 
+		esos dispositivos móviles.
+		¿Por qué esto es necesario? Porque los navegadores de los dispositivos móviles tienden a mentir sobre el ancho de su ventana gráfica.
+	-->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="author" content="Oscar del Aguila">
+	
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+	
+	
+	<title>Las recetas de la Abuela</title>
+
+
+</head>
+
+
+<body>
+
+
+
+
+	<header id="cabecera">
+			
+				<div>
+					<div>
+						<a href="index.html">
+							<i class="fas fa-utensils"></i>
+						</a>
+					</div>
+					<div><a href="index.html">La Cocina de la Abuela</a></div>
+				</div>
+
+				<nav>
+					<ul>                                       
+						<li><a href="categorias.html"  >COCINAS</a></li>
+						<li><a href="presentacion.html" >PRESENTACIÓN</a></li>
+						<li><a href="enlaces.html" >ENLACES</a></li>
+					</ul>
+				</nav>
+
+	</header>
+
+
+	
+	<main>
+
+		<section class="seccion-centrada">
+
+			<h1>Las Recetas de la abuela</h1>
+
+			<p>Si quieres saber un poco más de esta web clica sobre el siguiente enlace... <a href="presentacion.html"> CONOCER MÁS</a>	</p>
+
+		</section>
+
+
+		<section  >
+
+			<h1>Tipos de Cocina</h1>
+
+			<div class="dos-columns ">
+
+				<div>
+					<figure>
+						<a href="categorias.html#cocina-mediterranea">
+						<img src="img/barcelona_640.jpg" alt="Cocina Mediterranea " class="tipo-cocina" >	
+
+						<figcaption class="">
+						    <p>Cocina Mediterranea</p>
+						</figcaption>
+						</a>
+
+					</figure>
+				</div>
+
+				<div>
+					<figure>
+				
+						<a href="categorias.html#cocina-peruana">
+						<img src="img/machu-pichu_640.jpg" alt="Cocina Peruana" class="tipo-cocina">
+
+						<figcaption class="">
+						    <p>Cocina Peruana</p>
+						</figcaption>
+
+						</a>
+
+					</figure>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section>
+
+			<h1><strong>Únete a nuestro Newsletter</strong></h1>
+
+			<div>
+
+
+				<form >
+
+					<fieldset>
+
+						<div>
+							<input id="email" class=" " type="email" required name="email" maxlength="128" minlength="3" title="Escribe tu correo electrónico" placeholder="Correo electrónico">
+						</div>
+
+
+						<div><p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE: La Cocina de la abuela. Finalidades: recogida de datos para la inscripción como socio del interesado. Legitimación: Consentimiento del interesado. Destinatarios: No están previstas cesiones de datos a terceros, salvo obligación legal. Derechos: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a info@lacocinadelaabuela.org. Información Adicional: Puede ampliar la información en el enlace de Aviso Legal y Política de privacidad.
+						</p></div>
+						
+
+						<div>
+							<input type="checkbox" id="politica-privacidad" required name="politica-privacidad">
+							<label for="politica-privacidad">He leído y acepto la política de privacidad</label>
+						</div>
+
+						<div><input id="btnMessage" type="button" name="unete" value="Únete" class="boton"  ></div>
+
+						
+
+					</fieldset>
+
+					<div id="mensaje-de-bienvenida-newsletter"></div>
+			
+
+				</form>
+
+				
+
+			</div>
+
+			
+
+		</section>
+
+		<section>
+
+			<h1><strong><a href="enlaces.html">Enlaces de interés</a></strong></h1>	
+
+		</section>
+
+	</main>
+	
+	<footer>
+		
+		
+		 <ul>
+			 	<li><a href="">Aviso Legal</a><span> · </span></li>
+				<li><a href="">Política de privacidad</a></li>
+		</ul>
+	     <ul>
+			     <li><a href="">Facebook <i class="fab fa-facebook-f"> </i></a><span> · </span></li>
+				 <li><a href="">Twitter <i class="fab fa-twitter"> </i></a><span> · </span></li>
+				 <li><a href="">Youtube <i class="fab fa-youtube"></i></a></li>
+		</ul>
+
+         <ul>
+			
+			<li> &copy; 2020 Oscar del Aguila Giménez</li>
+
+		 </ul>
+
+		 <!-- <a href="#cabecera"><div class="desplazador-arriba">&xwedge;</div></a> -->
+
+		 <a href="#cabecera"><div class="desplazador-arriba"><i class="fas fa-chevron-circle-up"></i></div></a>	
+		 
+
+	</footer>	
+
+
+	<script src="./main.js"></script>
+</body>
+</html>

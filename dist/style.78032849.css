@@ -1,0 +1,1095 @@
+
+
+body {
+
+	/*google fonts*/
+	font-family: 'Noto Serif', serif;
+
+	/*contenido centrado*/
+	margin:0 auto;
+	width: 100%;
+	background-color:rgb(128, 0, 0, 0.1	);
+}
+
+
+/*color de los textos*/
+p, div label {
+
+	color:indianred;
+
+}
+
+
+div.desplazador-arriba {
+
+	position: fixed;
+
+	/* posicion desde calculada desde el elmento padre */
+	bottom:5vh;
+	right:3vw;
+
+	/*sobresaltamos el enlace para que siempre sea visible */
+	z-index: 100;
+	color:white;
+	font-size: 3rem;
+
+}
+
+
+main {
+
+	width: 70%;
+	margin: 0 auto;
+
+}
+
+
+header {
+
+	/* contenedor con hijos flexibles */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	/* cuando no caben se disponen en la linea de abajo */
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	padding-top: 3%;
+	
+	
+}
+
+
+/*logo y text La receta de la abuela*/
+header div {
+
+	-webkit-box-flex: 0.5;
+
+	    -ms-flex: 0.5;
+
+	        flex: 0.5;
+
+	/*alineación vertical*/
+	vertical-align: middle;
+	text-align: left;
+	padding-left: 2%;
+
+	/* tamaño de fuente que varia segun el tamaño de la ventana */
+	font-size: 1.5vw;
+	
+
+}
+
+/* Convertimos en 'inline' el div del icono de la cabecera para que se vea junto con el texto.*/
+header > div > div {
+
+	display: inline;
+
+}
+
+
+
+/*elemento de navegacion*/
+header nav {
+
+	/* proporción del ancho de la columna de los elementos del menú de la cabecera*/
+	-webkit-box-flex: 4.5;
+	    -ms-flex: 4.5;
+	        flex: 4.5;
+	text-align: center;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+
+	/* tamaño de la fuente en relación con el ancho de la ventana*/
+	font-size: 1.7vw;
+
+}
+
+
+h1 {
+
+	margin-bottom: 2%;
+	color:burlywood;
+}
+
+
+nav ul li {
+
+	/* lista en linea del menu de la cabecera */
+	display: inline;
+	padding-left: 2%;
+	padding-right: 2%; 
+
+}
+
+
+section {
+
+	text-align: center;
+	margin-bottom: 5%; 
+
+}
+
+/* Enlaces */
+
+a {
+
+	text-decoration: none;
+	color:#9b1700;
+}
+
+nav li a {
+
+	color: salmon;
+}
+
+nav li a:hover, nav li a:active {
+
+	color:rgb(139,0,0) ;
+}
+
+
+.activado {
+
+	font-style: italic;
+	font-weight: 700;
+	color:rgb(139,0,0) ;
+
+}
+
+
+
+/************************************************************ index.html ***********************************************************/
+
+
+/* elemento padre con flexbox */
+div.dos-columns {
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	text-align:center;
+
+}
+
+/* Elementos hijo*/
+div.dos-columns div{
+
+	/* proporcion igual para cada columna hijo */
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1; 
+	text-align: center;
+		
+}
+
+
+div.dos-columns figure {
+
+	height: 60vh;
+	margin: 0;
+
+}
+
+
+
+img.tipo-cocina {
+
+	-o-object-fit: cover;
+
+	   object-fit: cover;
+	width: 100%;
+	height: 80%;
+
+}
+
+
+form, fieldset  {
+
+	width: 80%;
+	border: 0px;
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+
+/* selector contenedor de los inputs*/
+fieldset div {
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	text-align: left;
+	width: 100%;
+	
+}
+
+
+/*controles*/
+input[type="email"] {
+
+
+	-webkit-box-sizing: border-box;
+
+
+	        box-sizing: border-box; /* al padding y el border no afecta al tamañó de la caja */
+	border: 1px solid black;
+	border-left: 1px solid grey;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	width: 100%;
+
+}
+
+
+
+#mensaje-de-bienvenida-newsletter {
+
+	color:white;
+	background-color: green;
+	margin: 1% auto;
+	width: 80%;
+	text-align: center;
+
+}
+
+/**************************************************** pie de pagina ****************************************************/
+
+/* footer flexbox */
+body footer {
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	/* si los elementos hijos no caben pasan a la siguiente linea */
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #433A44;
+	color: white;
+	padding: 4% 2% 0% 2%;
+
+	/*al ancho hay que restarle los padding del 2% para tener un ancho del 100% */
+	width: 96%;
+	
+}
+
+footer a {
+
+	color:white;
+
+} 
+
+footer a:hover {
+
+	color: #9b1700;
+
+}
+
+
+/* selector primer hijo del footer flexbox */
+footer ul {
+
+	-webkit-box-flex: 1;
+
+	    -ms-flex: 1;
+
+	        flex: 1;
+	margin:unset;
+	padding: unset;
+	margin-bottom: 3%;
+	list-style: none;
+
+}
+
+
+footer ul li {
+
+	display: inline;
+	padding: 0.3% 0% 0.3% 0%;
+
+}
+
+
+/* selector segundo hijo del footer flexbox */
+footer ul + ul{
+
+	text-align: right;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	
+}
+
+
+/* selector tercer hijo del footer flexbox */
+footer ul + ul + ul {
+
+	/* para que lo ponga debajo (proporción el doble y ancho 100%) */
+	-webkit-box-flex: 2;
+	    -ms-flex: 2 100%;
+	        flex: 2 100%;
+	text-align: left;
+	
+}
+
+
+/* clase para los botones de la web */
+.boton {
+
+	background-color: #c5d883;
+	color:white;
+	border-radius: 5px;
+	padding: 1% 4% 1% 4%;
+	font-size: 1vw;
+	border: 2px solid transparent;
+	
+}
+
+.boton:hover {
+
+	background-color: rgb(22, 126, 38);
+	border: 2px solid transparent
+
+}
+
+.boton:active {
+
+	border:2px solid rgb(163, 204, 169);
+	border-radius: 0px;
+
+}
+
+
+/*********************************************************** Categorias ****************************************************/
+
+
+
+/*centramos titulo*/
+article h1 {
+
+	text-align: center;
+}
+
+
+/* Para Categorías.html y presentacion.html */
+article div.container {
+
+	
+	display: -ms-grid;
+
+	
+	display: grid;
+
+	/*cuadricula flexible: repetimos hasta qeu sea posible 3 columnas con minimo ancho cada una en pixeles y
+	y hasta ocupar el ancho posible */
+	-ms-grid-columns: (minmax(120px, 1fr))[3];
+	grid-template-columns: repeat(3, minmax(120px, 1fr));
+
+	/*separación entre imagen e imagen también en sesiones 2020 */
+	grid-gap: 30px;
+	text-align: left;
+	
+
+}
+
+
+/****************************************************** Presentación ********************************************************/
+
+
+article div.container-duo {
+
+	display:-ms-grid;
+
+	display:grid;
+
+	/*cuadricula flexible: repetimos hasta qeu sea posible 2 columnas con minimo ancho cada una en pixeles y
+	y hasta ocupar el ancho posible */
+	-ms-grid-columns: (minmax(170px, 1fr))[2];
+	grid-template-columns: repeat(2, minmax(170px, 1fr));
+
+	/*separación entre imagen e imagen también en sesiones 2020 */
+	grid-gap: 50px;
+	text-align: justify;
+
+}
+
+
+article div.container-mono-mediterraneo {
+
+	background: url(/habichuelas_1920.66bc0ebd.jpg), url(/habas_1920.8d05f876.jpg);
+
+	background-repeat: no-repeat;			
+	background-position: right left  ;
+	background-size: 50% 100%, 100% 100%;
+	height: 450px;
+	
+}
+
+article div.container-mono-mediterraneo figure::before {
+
+	content: "Habichuelas";
+	color:violet;
+	font-size: 1.5rem;
+	margin-top: -20%;
+	font-weight: bolder;
+
+}
+
+article div.container-mono-mediterraneo figure::after {
+
+	content: "Habas";
+	color:white;
+	font-size: 1.5rem;
+	margin-top: -20%;
+	font-weight: bolder;
+
+}
+
+article div.container-mono-peruano figure::before {
+
+	content: "Mazamorra";
+	color:violet;
+	font-size: 1.5rem;
+	margin-top: -20%;
+	font-weight: bolder;
+
+}
+
+article div.container-mono-peruano figure::after {
+
+	content: "Cabrito";
+	color:white;
+	font-size: 1.5rem;
+	margin-top: -20%;
+	font-weight: bolder;
+
+}
+
+article div.container-mono-peruano figcaption, article div.container-mono-mediterraneo figcaption {
+	
+	font-size: 1.5rem;
+
+}
+
+
+article div.container-mono-peruano {
+
+
+	background: url(/mazamorra_640.79085b30.jpeg), url(/cabrito-a-la-nortena.fe7b56a4.jpg);
+
+	background-repeat: no-repeat;			
+	background-position: right left;
+	background-size: 50% 100%, 100% 100%;
+	height: 450px;
+	width: 100%;
+
+}
+
+
+article div.container img {
+
+	width: 100%;
+
+}
+
+article div.container-mono-mediterraneo img, article div.container-mono-peruano img   {
+	
+	width: 45%; 
+	height: 50%;
+
+}
+
+
+.container-con-lateral {
+
+	display:-webkit-box;
+
+	display:-ms-flexbox;
+
+	display:flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+
+
+}
+
+
+.container-con-lateral aside {
+
+	-webkit-box-flex: 1;
+
+	    -ms-flex: 1;
+
+	        flex: 1;
+	text-align: left;
+
+
+}
+
+.container-con-lateral div {
+
+
+	-webkit-box-flex: 4;
+
+
+	    -ms-flex: 4;
+
+
+	        flex: 4;
+
+}
+
+
+/* enlaces y lateral de presentacion.html */
+aside ul li a {
+
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+aside ul li a:hover {
+
+	color: indianred;
+
+}
+
+
+aside ul {
+
+	list-style-type: none;
+
+	/* valores iniciales anulados */
+	padding: unset;
+
+}
+
+
+article section h1 {
+
+	text-align: left;
+}
+
+
+
+div.container-con-lateral div.container, 
+div.container-con-lateral div.container-mono-mediterraneo,
+div.container-con-lateral div.container-mono-peruano,
+div.container-con-lateral div.container-duo  {
+
+	margin-bottom: 10%;
+		
+}
+
+
+
+div.container-con-lateral div.container-mono-mediterraneo figure,
+div.container-con-lateral div.container-mono-peruano figure {
+
+	/*ocupa todo el ancho de su elemento padre figure */
+	margin:0;
+	padding:0;
+	width: 100%;
+
+
+}
+
+
+.titulo-apartado-presentacion {
+
+	color:white;
+	margin-top: 0%;
+	font-size: 30px;
+
+} 
+
+/********************************************************** Detalle Receta **************************************************/
+
+
+article aside h1 {
+
+	text-align: left;
+
+}
+
+
+/* elemento flexbox */
+article.wrapper-detalle {
+
+
+	display: -webkit-box;
+
+
+	display: -ms-flexbox;
+
+
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+
+}
+
+/* proporcion 1.5 del ancho */
+article.wrapper-detalle aside {
+
+	-webkit-box-flex: 1.5;
+
+	    -ms-flex: 1.5;
+
+	        flex: 1.5;
+	text-align: left;
+	padding-right:  2%;
+
+}
+
+/*proporcion 2 del ancho */
+article.wrapper-detalle section {
+
+	-webkit-box-flex: 2;
+
+	    -ms-flex: 2;
+
+	        flex: 2;
+	text-align: justify;
+		
+}
+
+article.wrapper-detalle section h1 {
+
+	text-align: left;
+	
+}
+
+
+/*respetamos propiedades de la siguiente regla al poner inline-block*/
+article.wrapper-detalle section div.video-receta + div p {
+
+	display: inline-block;
+	
+}
+
+article.wrapper-detalle section div.video-receta + div p::first-letter, article.wrapper-detalle section div span {
+
+	font-size: 1.6rem;
+
+}
+
+
+iframe {
+
+	width: 100%;
+	height: 100%;
+
+}
+
+
+/* contenedor del iframe */
+div.video-receta {
+
+   width: 100%;
+   height: 45vh;
+}
+
+.imagen-detalle{
+
+		float:left;
+		
+		/*imagen redondeada*/
+		border-radius: 300px;
+
+		/* el texto respeta la forma de la foto redondeada*/
+		/* Da error en el validador */
+
+		shape-outside: circle();
+		width: 250px;
+		height: 250px;
+		margin-right: 3%;
+	
+		
+}
+
+
+/* lista de descripcion del detalle */
+dt {
+
+	width: 100%;
+	border-bottom: 1px solid grey;
+	
+}
+
+
+dd, dl {
+
+	line-height: 1.2rem;
+}
+
+dd {
+
+	padding-bottom: 3%;
+}
+
+
+/****************************************** hilo de Ariadna o migas de pan *************************************/
+
+
+ul.breadcrumb li[value="100"] {
+
+	color: crimson;
+
+}
+
+ul.breadcrumb {
+
+  margin-top: 4%;
+  padding: unset;
+  list-style: none;
+  
+}
+
+
+ul.breadcrumb li {
+  
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+ul.breadcrumb li+li:before {
+
+  padding: 7px;
+  content: "/ ";
+}
+
+
+/******************************************* Estilos de validación + Javascript ************************************************/
+
+
+.valido {
+	
+	background-color: rgb(189,236,182,0.5); /*en verde con opacidad*/
+	
+
+}
+
+
+.invalido {
+
+	background-color: rgb(256,0,0,0.1); /*en rojo con opacidad*/
+	
+}
+
+
+/******************************************************************************************************************/
+/*** cuando la resolución del dispositivo como máximo es de 768px de ancho se aplican estas reglas de estilo.
+*******************************************************************************************************************/
+
+
+@media screen and (max-width: 768px) { 
+
+	
+	main {
+
+		margin: 0 auto;
+
+		/*aumentamos el ancho respecto a los dispositivos grandes.*/
+		width: 95%;
+		
+	}
+
+
+	/*logo y La Receta de la abuela*/
+	header div {
+
+		/* el orden de visualización del elemento lo indicamos con la propiedasd --order--  */
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
+		font-size: 1.5rem;
+
+		/* todo el ancho del dispositivo */
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 100%;
+		        flex: 1 100%; 
+		text-align: center;
+
+	}
+
+	/*elemento de navegacion se mostrará el último de los tres elementos hijos, por defecto el order = 0; */
+	header div + nav {
+
+		-webkit-box-ordinal-group: 3;
+
+		    -ms-flex-order: 2;
+
+		        order: 2;
+		font-size: 1rem;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 100%;
+		        flex: 1 100%; 
+		text-align: center;
+		margin: 0;
+		padding: 0;
+
+
+	}
+
+
+	/* cambiamos la visualización del menu de navegación */
+	nav ul li {
+
+		text-align: center;
+		display: block;
+
+	}
+
+
+	/* pie de pagina */
+	footer {
+
+		display: -webkit-box;
+
+		display: -ms-flexbox;
+
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+
+
+	footer ul {
+
+		-webkit-box-flex: 100%;
+
+		    -ms-flex: 100%;
+
+		        flex: 100%; 
+		margin-bottom: 7%;
+
+	}
+
+	/* para la primera lista del pie insertamos un buen margen al final.*/
+	footer ul:first-child {
+
+		margin-bottom: 15%;
+
+	}
+
+
+	/*No pintamos por pantalla los puntos de entre los enlaces */
+	footer span {
+
+		display: none;
+
+	}
+
+
+	footer ul li {
+
+		display: block;
+		text-align: center;
+
+	}
+
+	/* cambiamos la visualización para que se vea una unica columna */
+	div.dos-columns {
+
+		display: block;
+		/*centramos los elementos */
+		margin: 0 auto;
+		
+	}
+
+		
+	fieldset {
+
+		-webkit-box-flex: 1;
+
+		    -ms-flex: 1;
+
+		        flex: 1;	
+	}
+
+
+	/*selector referente a las categorias */	
+	article div.container, article div.container-duo {
+
+		-ms-grid-columns: (minmax(320px, 1fr))[1];
+
+		grid-template-columns: repeat(1, minmax(320px, 1fr));
+		
+	}
+
+	
+	.titulo-apartado-presentacion {
+
+		color:white;
+		margin-top: 0%;
+		font-size: 18px;
+	
+	} 
+	
+
+	div.container-con-lateral aside {
+
+		text-align: left;
+		/* el hijo ocupa todo el ancho disponible */
+		-webkit-box-flex:1;
+		    -ms-flex:1 100%;
+		        flex:1 100%;
+		width: 100%;
+		margin-left: 5%;
+
+	}
+
+
+	div.container-con-lateral aside  h1 {
+
+		text-align: center;
+	}
+
+	
+	div.container-con-lateral div {
+
+
+		/* el hijo ocupa todo el ancho disponible */
+		-webkit-box-flex: 100%;
+		    -ms-flex: 100%;
+		        flex: 100%;
+		width: 100%;
+		
+		
+	}
+	
+	div.container-con-lateral div.container,
+	div.container-con-lateral div.container-mono-mediterraneo,
+	div.container-con-lateral div.container-mono-peruano,
+	div.container-con-lateral div.container-duo  {
+
+		margin-bottom: 4%;
+		
+
+	}
+
+	div.container-con-lateral div.container-mono-mediterraneo,
+	div.container-con-lateral div.container-mono-peruano {
+
+		width: 100%;
+
+	}
+
+	
+	article div.container-mono-mediterraneo {
+
+		height: 300px;
+
+	}
+	
+	article div.container-mono-peruano {
+	
+	
+		height: 300px;
+	
+	}
+
+	article div.container-mono-mediterraneo figure::before {
+
+		font-size: 1.0rem;
+	
+	}
+	
+	article div.container-mono-mediterraneo figure::after {
+	
+		font-size: 1.0rem;
+	
+	}
+	
+	article div.container-mono-peruano figure::before {
+	
+		font-size: 1.0rem;
+	
+	}
+	
+	article div.container-mono-peruano figure::after {
+	
+		font-size: 1.0rem;
+	
+	}
+	
+	article div.container-mono-peruano figcaption, article div.container-mono-mediterraneo figcaption {
+		
+		font-size: 1.0rem;
+	
+	}
+	
+	
+	/**************************************** Detalle *********************************************/
+	article.wrapper-detalle aside {
+
+		-webkit-box-flex: 100%;
+
+		    -ms-flex: 100%;
+
+		        flex: 100%;
+		text-align: left;
+		
+	}
+
+	article.wrapper-detalle section {
+
+		-webkit-box-flex: 100%;
+
+		    -ms-flex: 100%;
+
+		        flex: 100%;
+		text-align: left; 		
+	}
+
+	article.wrapper-detalle section h1 {
+
+		text-align: left;
+
+	}
+
+	/* esta regla está repetida pero porque no se puede ejecutar para dispositivos grandes
+	ya que hacemos un display:none del span. y por eso la escribimos de nuevo para dispositivos
+	pequeños. */
+	article.wrapper-detalle section div.video-receta + div p::first-letter {
+
+		font-size: 1.4rem;
+
+	}
+
+
+	/**************** migas de pan **************************/
+	ul.breadcrumb {
+
+	  text-align: center;	
+	  margin: 10% auto 0% auto;
+	  padding: unset;
+	  list-style: none;
+	  
+	}
+
+	.boton {
+
+		font-size: 4vw;
+		width: 50%;
+		padding: 2%;
+
+	}
+
+}
+
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
